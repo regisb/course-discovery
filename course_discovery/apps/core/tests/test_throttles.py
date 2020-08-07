@@ -1,4 +1,4 @@
-import mock
+from unittest import mock
 from django.conf import settings
 from django.urls import reverse
 from rest_framework.test import APITestCase
@@ -16,7 +16,7 @@ class RateLimitingExceededTest(SiteMixin, APITestCase):
     """
 
     def setUp(self):
-        super(RateLimitingExceededTest, self).setUp()
+        super().setUp()
 
         self.url = reverse('api_docs')
         self.user = UserFactory()
@@ -28,7 +28,7 @@ class RateLimitingExceededTest(SiteMixin, APITestCase):
         self.default_rate_patcher.start()
 
     def tearDown(self):
-        super(RateLimitingExceededTest, self).tearDown()
+        super().tearDown()
         throttling_cache().clear()
         self.user.is_superuser = False
         self.user.is_staff = False

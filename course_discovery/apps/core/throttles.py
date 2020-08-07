@@ -34,4 +34,4 @@ class OverridableUserRateThrottle(UserRateThrottle):
             except UserThrottleRate.DoesNotExist:
                 pass
 
-        return super(OverridableUserRateThrottle, self).allow_request(request, view)
+        return super().allow_request(request, view)
