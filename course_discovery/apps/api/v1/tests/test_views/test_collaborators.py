@@ -9,7 +9,7 @@ class CollaboratorViewSetTests(OAuth2Mixin, SerializationMixin, APITestCase):
     """ Tests for the collaborator resource. """
 
     def setUp(self):
-        super(CollaboratorViewSetTests, self).setUp()
+        super().setUp()
         self.user = UserFactory(is_staff=True)
         self.request.user = self.user
         self.client.login(username=self.user.username, password=USER_PASSWORD)
@@ -17,7 +17,7 @@ class CollaboratorViewSetTests(OAuth2Mixin, SerializationMixin, APITestCase):
         self.collaborator = CollaboratorFactory(name=self.name)
 
     def tearDown(self):
-        super(CollaboratorViewSetTests, self).tearDown()
+        super().tearDown()
         self.client.logout()
 
     def test_get(self):
