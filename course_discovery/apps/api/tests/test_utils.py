@@ -1,8 +1,8 @@
 import datetime
 from itertools import product
+from unittest import mock
 
 import ddt
-from unittest import mock
 from django.test import TestCase
 from opaque_keys.edx.keys import CourseKey
 from rest_framework.request import Request

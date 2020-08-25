@@ -1,5 +1,6 @@
 import datetime
 import json
+from unittest import mock
 
 import ddt
 import pytest
@@ -8,7 +9,6 @@ import responses
 from django.conf import settings
 from django.db import IntegrityError
 from django.db.models.functions import Lower
-from unittest import mock
 from rest_framework.reverse import reverse
 from testfixtures import LogCapture
 

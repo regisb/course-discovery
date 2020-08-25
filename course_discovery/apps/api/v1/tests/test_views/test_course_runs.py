@@ -1,9 +1,9 @@
 # pylint: disable=no-member
 import datetime
 import urllib
+from unittest import mock
 
 import ddt
-from unittest import mock
 import pytest
 import pytz
 import responses

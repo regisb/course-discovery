@@ -1,7 +1,8 @@
+from unittest import mock
+
 from django.contrib.auth import get_user_model
 from django.contrib.auth.models import Group, Permission
 from django.db import IntegrityError
-from unittest import mock
 from rest_framework.reverse import reverse
 from testfixtures import LogCapture
 from waffle.testutils import override_switch

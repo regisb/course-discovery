@@ -1,7 +1,7 @@
 import datetime
+from unittest import mock
 
 import factory
-from unittest import mock
 from django.db.models.signals import m2m_changed, post_save
 from rest_framework.reverse import reverse
 

@@ -1,7 +1,7 @@
 import json
+from unittest import mock
 
 import ddt
-from unittest import mock
 from django.urls import reverse
 
 from course_discovery.apps.api.tests.jwt_utils import generate_jwt_header_for_user

@@ -2,10 +2,10 @@
 import datetime
 import itertools
 import re
+from unittest import mock
 from urllib.parse import urlencode
 
 import ddt
-from unittest import mock
 import pytest
 import responses
 from django.test import TestCase
